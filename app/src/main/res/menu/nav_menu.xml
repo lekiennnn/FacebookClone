@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_news_feed"
+        android:icon="@color/black"
+        android:title="Newsfeed" />
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@color/black"
+        android:title="Friends" />
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@color/black"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@color/black"
+        android:title="Menu" />
+</menu>
