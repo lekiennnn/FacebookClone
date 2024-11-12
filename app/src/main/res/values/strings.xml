@@ -1,7 +1,3 @@
 <resources>
-<<<<<<< HEAD
     <string name="app_name">FacebookClone</string>
-=======
-    <string name="app_name">Clone</string>
->>>>>>> 60a3c0313c12422604574fd210d1aa57d9043237
 </resources>

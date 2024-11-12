@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.facebookclone.R
+import com.example.clone.R
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
