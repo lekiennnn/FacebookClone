@@ -10,7 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.FacebookClone"
+=======
+        android:theme="@style/Theme.Clone"
+>>>>>>> 60a3c0313c12422604574fd210d1aa57d9043237
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"

@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.facebookclone"
     compileSdk = 35
 
@@ -11,6 +12,15 @@ android {
         applicationId = "com.example.facebookclone"
         minSdk = 24
         targetSdk = 35
+=======
+    namespace = "com.example.clone"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.example.clone"
+        minSdk = 24
+        targetSdk = 34
+>>>>>>> 60a3c0313c12422604574fd210d1aa57d9043237
         versionCode = 1
         versionName = "1.0"
 
@@ -37,6 +47,7 @@ android {
 
 dependencies {
 
+<<<<<<< HEAD
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
 
@@ -58,6 +69,8 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.71828")
 
 
+=======
+>>>>>>> 60a3c0313c12422604574fd210d1aa57d9043237
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

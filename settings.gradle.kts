@@ -19,6 +19,10 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "FacebookClone"
+=======
+rootProject.name = "Clone"
+>>>>>>> 60a3c0313c12422604574fd210d1aa57d9043237
 include(":app")
  
