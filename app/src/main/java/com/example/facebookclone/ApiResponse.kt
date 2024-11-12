@@ -6,4 +6,5 @@ import retrofit2.http.GET
 interface ApiResponse {
     @GET("posts")
     fun getPosts(): Call<PostWrapper>
+    //
 }

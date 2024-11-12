@@ -13,6 +13,7 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.menu,container,false)
+//        setupUI()
         return view
     }
 }

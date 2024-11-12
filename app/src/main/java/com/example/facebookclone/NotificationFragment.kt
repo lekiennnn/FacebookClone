@@ -14,5 +14,6 @@ class NotificationFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.notifications, container, false)
         return view
+        //
     }
 }

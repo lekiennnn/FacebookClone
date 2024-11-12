@@ -19,6 +19,7 @@ class NewsFeedFragment : Fragment() {
         val view = inflater.inflate(R.layout.newsfeed, container, false)
         setupUI(view)
         return view
+        //
     }
 
     private fun setupUI(view: View) {

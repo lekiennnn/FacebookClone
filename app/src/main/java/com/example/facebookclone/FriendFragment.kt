@@ -13,7 +13,7 @@ class FriendFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.friends, container, false)
-//        setupUI(view)
+        setupUI(view)
         return view
     }
 

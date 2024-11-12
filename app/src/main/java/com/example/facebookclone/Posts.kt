@@ -12,4 +12,5 @@ data class Post(
     val likes : Int,
     val commentsCount : Int,
     val comments : List<Comment>
+    //
 )

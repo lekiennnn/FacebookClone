@@ -16,6 +16,7 @@ class ViewPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activi
             2 -> NotificationFragment()
             3 -> MenuFragment()
             else -> NewsFeedFragment()
+            //
         }
     }
 }

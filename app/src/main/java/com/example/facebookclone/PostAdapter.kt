@@ -15,7 +15,7 @@ class PostAdapter(private val posts : List<Post>) : RecyclerView.Adapter<PostVie
 
     override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
         TODO("Not yet implemented")
-        //nothing
+        // ??
     }
 
 }

@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // ViewPager
+        // ViewPager2
         val viewPager = findViewById<ViewPager2>(R.id.viewPager)
         viewPager.adapter = ViewPagerAdapter(this)
     }
