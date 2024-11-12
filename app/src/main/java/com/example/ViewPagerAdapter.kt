@@ -1,4 +1,4 @@
-package com.example.facebookclone
+package com.example
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

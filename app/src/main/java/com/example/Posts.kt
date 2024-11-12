@@ -1,4 +1,4 @@
-package com.example.facebookclone
+package com.example
 
 data class PostWrapper (
     val posts : List<Post>

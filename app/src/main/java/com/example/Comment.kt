@@ -1,4 +1,4 @@
-package com.example.facebookclone
+package com.example
 
 data class Comment (
     val commenter : String,

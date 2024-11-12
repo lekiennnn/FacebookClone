@@ -1,4 +1,4 @@
-package com.example.facebookclone
+package com.example
 
 import android.view.View
 import android.view.ViewGroup
