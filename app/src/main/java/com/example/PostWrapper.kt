@@ -6,11 +6,11 @@ data class PostWrapper (
 
 data class Post(
     val author : String,
-    val media : String?,
-    val status : String,
+    val image : String?,
+    val content : String,
     val pfp : String,
     val likes : Int,
     val commentsCount : Int,
+    val shares : Int,
     val comments : List<Comment>
-    //
 )

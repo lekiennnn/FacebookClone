@@ -5,13 +5,21 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.clone.R
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class NewsFeedFragment : Fragment() {
+class NewsfeedFragment : Fragment(), OnPostInteractionListener {
+
+    private lateinit var rv_posts : RecyclerView
+    private lateinit var postAdapter: PostAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -20,11 +28,13 @@ class NewsFeedFragment : Fragment() {
         val view = inflater.inflate(R.layout.newsfeed, container, false)
         setupUI(view)
         return view
-        //
     }
 
     private fun setupUI(view: View) {
-        fetchPosts() // Make the API call to fetch posts
+        rv_posts = view.findViewById(R.id.rv_posts)
+        rv_posts.layoutManager = LinearLayoutManager(requireContext())
+
+        fetchPosts() // API
     }
 
     private fun fetchPosts() {
@@ -35,7 +45,7 @@ class NewsFeedFragment : Fragment() {
                     val postWrapper = response.body()
                     val posts = postWrapper?.posts
                     if (posts != null) {
-                        displayPosts(posts) // Pass the posts to a method to display them in UI
+                        displayPosts(posts)
                     }
                 } else {
                     Log.e("NewsFeedFragment", "Failed to get posts: ${response.errorBody()}")
@@ -49,6 +59,20 @@ class NewsFeedFragment : Fragment() {
     }
 
     private fun displayPosts(posts: List<Post>) {
-        // Implement code here to display posts, e.g., setting them in a RecyclerView adapter
+        postAdapter = PostAdapter(posts, this)
+        rv_posts.adapter = postAdapter
+    }
+
+    override fun OnLikeClicked(post: Post) {
+        Toast.makeText(context, "Like", Toast.LENGTH_SHORT).show()
+
+    }
+
+    override fun OnCommentClicked(post: Post) {
+        Toast.makeText(context, "Comment", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun OnShareClicked(post: Post) {
+        Toast.makeText(context, "Share", Toast.LENGTH_SHORT).show()
     }
 }

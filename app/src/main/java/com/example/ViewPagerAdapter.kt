@@ -11,11 +11,11 @@ class ViewPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activi
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> NewsFeedFragment()
+            0 -> NewsfeedFragment()
             1 -> FriendFragment()
             2 -> NotificationFragment()
             3 -> MenuFragment()
-            else -> NewsFeedFragment()
+            else -> NewsfeedFragment()
             //
         }
     }

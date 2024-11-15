@@ -12,6 +12,5 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiResponse::class.java)
-        //
     }
 }
