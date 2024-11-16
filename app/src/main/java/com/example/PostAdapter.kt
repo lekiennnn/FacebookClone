@@ -1,5 +1,6 @@
 package com.example
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
@@ -24,6 +25,7 @@ class PostAdapter(private val posts : List<Post>, private val listener: OnPostIn
 
     override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
         val currentPost = posts[position]
+
         Picasso.get()
             .load(currentPost.pfp)
             .into(holder.img_pfp)
@@ -38,14 +40,44 @@ class PostAdapter(private val posts : List<Post>, private val listener: OnPostIn
         holder.tv_commentCounts.text = "${currentPost.commentsCount} comments"
         holder.tv_shareCounts.text = "${currentPost.shares} shares"
 
+        // Like feature
         holder.btn_like.setOnClickListener{
             listener.OnLikeClicked(currentPost)
+            currentPost.isLiked = !currentPost.isLiked // toggle
+
+            if(currentPost.isLiked){
+                holder.tv_likeCounts.text = "${currentPost.likes + 1} likes"
+                holder.btn_like.text = "Liked"
+                holder.btn_like.setTextColor(Color.GRAY)
+            }
+            else{
+                holder.tv_likeCounts.text = "${currentPost.likes} likes"
+                holder.btn_like.text = "Like"
+                holder.btn_like.setTextColor(Color.BLACK)
+            }
         }
+
+        // Comment feature
         holder.btn_comment.setOnClickListener{
             listener.OnCommentClicked(currentPost)
+
         }
+
+        // Share feature
         holder.btn_share.setOnClickListener{
             listener.OnShareClicked(currentPost)
+            currentPost.isShared = !currentPost.isShared
+
+            if(currentPost.isShared){
+                holder.tv_shareCounts.text = "${currentPost.shares + 1} shares"
+                holder.btn_share.text = "Shared"
+                holder.btn_share.setTextColor(Color.GRAY)
+            }
+            else{
+                holder.tv_shareCounts.text = "${currentPost.shares} shares"
+                holder.btn_share.text = "Share"
+                holder.btn_share.setTextColor(Color.BLACK)
+            }
         }
     }
 

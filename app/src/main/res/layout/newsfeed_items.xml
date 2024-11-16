@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/img_pfp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="8dp"
             android:background="@drawable/avatar_background"
             android:contentDescription="Avatar Image"
@@ -34,7 +34,7 @@
             android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:layout_marginLeft="2dp"
             android:text="Author" />
     </LinearLayout>
@@ -117,6 +117,7 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:background="@android:color/transparent"
+            android:textStyle="bold"
             android:text="Like" />
 
         <View
@@ -132,6 +133,7 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:background="@android:color/transparent"
+            android:textStyle="bold"
             android:text="Comment" />
 
         <View
@@ -147,6 +149,7 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:background="@android:color/transparent"
+            android:textStyle="bold"
             android:text="Share" />
     </LinearLayout>
 

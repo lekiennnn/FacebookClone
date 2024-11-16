@@ -12,5 +12,12 @@ data class Post(
     val likes : Int,
     val commentsCount : Int,
     val shares : Int,
+    var isLiked : Boolean,
+    var isShared : Boolean,
     val comments : List<Comment>
+)
+
+data class Comment(
+    val commenter : String,
+    val commentText : String
 )

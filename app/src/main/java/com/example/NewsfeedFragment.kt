@@ -64,15 +64,14 @@ class NewsfeedFragment : Fragment(), OnPostInteractionListener {
     }
 
     override fun OnLikeClicked(post: Post) {
-        Toast.makeText(context, "Like", Toast.LENGTH_SHORT).show()
 
     }
 
     override fun OnCommentClicked(post: Post) {
-        Toast.makeText(context, "Comment", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun OnShareClicked(post: Post) {
-        Toast.makeText(context, "Share", Toast.LENGTH_SHORT).show()
+
     }
 }
